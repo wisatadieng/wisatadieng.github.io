@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <title>Paket Jeep Explore Telaga Dringo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+<style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #3a3a3a;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 16px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .filters {
+      background: #fff;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .filters select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .paket-card {
+      background: #fff;
+      margin-bottom: 18px;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .paket-title {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #222;
+    }
+    .paket-price {
+      color: #27ae60;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .paket-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-right: 8px;
+    }
+    .wa-btn {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .detail-btn {
+      background: linear-gradient(45deg, #007BFF, #0056b3);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      padding: 12px;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 12px;
+      text-align: center;
+    }
+    .bottom-nav a span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+  
+.badge {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 13px;
+  padding: 6px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;
+  line-height: 1.2;
+}
+.section-title {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c1e;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.dot {
+  color: #25D366;
+}
+.center {
+  font-size: 14px;
+  color: #ccc;
+}
+.btn-cta {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+
+.pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.branding {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+.logo span {
+  color: #25D366;
+}
+.sub {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+.btn-cta {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-cta:hover {
+  background: #1da851;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.card-sub {
+  font-size: 13px;
+  color: #666;
+}
+.card-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 18px;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #111;
+}
+.card-sub {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.card-btn {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 22px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+}
+.card-btn:hover {
+  background: #1da851;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+  .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+  .card {
+    padding: 14px;
+  }
+  .card-btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-sub {
+    font-size: 13px;
+  }
+}
+
+
+.rating {
+  font-size: 14px;
+  color: #f39c12;
+  margin: 6px 0 4px;
+}
+.rating-score {
+  font-size: 13px;
+  color: #555;
+}
+
+.paket-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  height: 450px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.gallery {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+.gallery-thumb {
+  width: 32%;
+  max-width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+</style>
+
+</head>
+<body>
+<header class="pro-header">
+  <div class="branding">
+    <div class="logo">Sikunir<span>.com</span></div>
+    <div class="sub">Paket Jeep Dieng</div>
+  </div>
+  <div class="cta">
+    <a class="btn-cta" href="https://wa.me/6281215307700?text=Booking+Jeep+Savana+Dieng" rel="nofollow" target="_blank">💬 Booking</a>
+  </div>
+</header>
+<div class="container">
+
+  <img src="img/paket-jeep-dieng-santai.png" alt="Jeep santai Dieng" class="paket-img" style="margin-top:18px;margin-bottom:20px;max-height:450px;object-fit:cover;box-shadow:0 2px 8px #0001;">
+
+  <div style="margin-bottom:26px;font-size:15px;color:#434343;line-height:1.7;background:#fff;padding:18px 20px 15px 20px;border-radius:16px;box-shadow:0 1px 6px #0001;">
+    <strong>Paket Santai – Rute Alam Asli Dieng</strong><br>
+    Explore Telaga Dringo Dan destinasi menarik lainnya.  
+    Cocok buat yang suka alam, foto landscape, dan sensasi jeep offroad.<br><br>
+    Trip santai, view asli pegunungan Dieng, booking langsung driver lokal!
+  </div>
+
+  <div class="card">
+    <div class="card-title">Detail Paket</div>
+    <div class="card-sub">Harga mulai <b>Rp450.000 / pax</b> (max 4 orang)</div>
+    <div style="margin-top:10px;">
+      <div class="section-title">Fasilitas:</div>
+      <span class="badge">🚙 Jeep 4x4</span>
+      <span class="badge">Driver Lokal</span>
+      <span class="badge">Free Air Mineral</span>
+      <span class="badge">Penjemputan homestay/hotel</span>
+      <span class="badge">Durasi setengah hari</span>
+      <div class="section-title" style="margin-top:10px;">Destinasi:</div>
+      <span class="badge">🌾 Candradimuka</span>
+      <span class="badge">💦 Telaga Dringo</span>
+      <span class="badge">🏞️ Gardu Pandang Tieng</span>
+      <span class="badge">View Pegunungan</span>
+    </div>
+    <div style="margin-top: 14px;">
+      <a class="btn wa-btn" href="https://wa.me/6281215307700?text=Booking+Jeep+Savana+Dieng" target="_blank" rel="nofollow">Booking via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Itinerary Singkat</div>
+    <ul style="padding-left:18px;margin:0 0 10px 0;font-size:14px;">
+      <li>Jemput di penginapan/homestay</li>
+      <li>Melihat Kawah Candradimuka</li>
+      <li>Explore Telaga Dringo</li>
+      <li>Foto-foto di Gardu Pandang Tieng</li>
+      <li>Drop balik ke penginapan</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">FAQ Paket Jeep Savana Pangonan</div>
+    <div style="margin:10px 0;"><b>Bisa start dari Wonosobo?</b><br>Bisa, konfirmasi saat booking (biaya beda).</div>
+    <div style="margin:10px 0;"><b>Bisa booking untuk sunrise?</b><br>Bisa, request ke admin.</div>
+    <div style="margin:10px 0;"><b>Jeep bisa ke Telaga Dringo langsung?</b><br>Bisa, akses aman via jeep 4x4 asli Dieng.</div>
+    <div style="margin:10px 0;"><b>Bisa stop foto-foto di jalan?</b><br>Bisa, private trip fleksibel.</div>
+    <div style="margin:10px 0;">Cek juga: <a href="jeep-golden-sunrise.html" style="color:#1976d2;">Jeep Golden Sunrise</a> | <a href="jeep-batu-angkruk.html" style="color:#1976d2;">Jeep Batu Angkruk</a> | <a href="jeep-full-dieng.html" style="color:#1976d2;">Jeep Full Dieng</a></div>
+  </div>
+
+</div>
+<footer>© 2025 Sikunir.com – Paket Jeep Dieng</footer>
+<div class="bottom-nav">
+  <a href="index.html"><span>🏠</span>Home</a>
+  <a href="https://www.instagram.com/paketwisatadiengsikunir" target="_blank"><span>📷</span>Instagram</a>
+  <a href="https://wa.me/6281215307700" rel="nofollow" target="_blank"><span>💬</span>WhatsApp</a>
+</div>
+</body>
+</html>
