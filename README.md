@@ -30,7 +30,7 @@ Kami menyediakan:
 ## Eksplorasi Sunrise Sikunir
 
 Sunrise Sikunir adalah ikon Dieng yang wajib dicoba!  
-Dapatkan pengalaman berburu matahari terbit terbaik dengan panduan, tips perlengkapan, dan rekomendasi waktu terbaik langsung di halaman ini atau di [sikunir.com](https://sikunir.com).
+Dapatkan pengalaman berburu matahari terbit terbaik dengan panduan, tips perlengkapan, dan rekomendasi waktu terbaik langsung di halaman ini atau di [sikunir.com](https://www.sikunir.com).
 
 ---
 
@@ -38,11 +38,11 @@ Dapatkan pengalaman berburu matahari terbit terbaik dengan panduan, tips perleng
 
 Semua informasi **paket wisata Dieng** akan terus diperbarui agar wisatawan mendapatkan referensi terpercaya sebelum trip.  
 Butuh konsultasi atau ingin pesan trip langsung?  
-Kunjungi [sikunir.com](https://sikunir.com) untuk info lengkap, promo terbaru, atau pertanyaan seputar destinasi Dieng & Sikunir.
+Kunjungi [sikunir.com](https://www.sikunir.com) untuk info lengkap, promo terbaru, atau pertanyaan seputar destinasi Dieng & Sikunir.
 
 ---
 
 Website ini bersifat open source, bisa di-clone, diadaptasi, atau dikembangkan lebih lanjut untuk kebutuhan promosi wisata Dieng.
 
-> Temukan pengalaman terbaik jelajah Dieng dengan **paket wisata Dieng** yang tepat – langsung cek wisatadieng.github.io dan [sikunir.com](https://sikunir.com).
+> Temukan pengalaman terbaik jelajah Dieng dengan **paket wisata Dieng** yang tepat – langsung cek wisatadieng.github.io dan [sikunir.com](https://www.sikunir.com).
 
