@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paket Wisata Dieng 3 Hari 2 Malam dari Purwokerto</title>
+  <style>
+  
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #3a3a3a;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 16px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .filters {
+      background: #fff;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .filters select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .paket-card {
+      background: #fff;
+      margin-bottom: 18px;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .paket-title {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #222;
+    }
+    .paket-price {
+      color: #27ae60;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .paket-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-right: 8px;
+    }
+    .wa-btn {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .detail-btn {
+      background: linear-gradient(45deg, #007BFF, #0056b3);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      padding: 12px;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 12px;
+      text-align: center;
+    }
+    .bottom-nav a span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+  
+.badge {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 13px;
+  padding: 6px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;
+  line-height: 1.2;
+}
+.section-title {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c1e;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.dot {
+  color: #25D366;
+}
+.center {
+  font-size: 14px;
+  color: #ccc;
+}
+.btn-cta {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+
+.pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.branding {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+.logo span {
+  color: #25D366;
+}
+.sub {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+.btn-cta {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-cta:hover {
+  background: #1da851;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.card-sub {
+  font-size: 13px;
+  color: #666;
+}
+.card-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 18px;
+}
+
+
+  
+.footer {
+  background: #f2f2f2;
+  padding: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+.footer-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #25D366;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.filter-section {
+  margin: 24px 0;
+  font-size: 14px;
+}
+.filter-section select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  width: 100%;
+}
+
+
+.home-btn {
+  display: inline-block;
+  margin-top: 24px;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.home-btn:hover {
+  background: #0056b3;
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Paket Wisata Dieng 3 Hari 2 Malam dari Purwokerto",
+  "description": "Paket wisata lengkap ke Dieng Plateau dengan fasilitas, destinasi menarik, dan layanan profesional.",
+  "offers": {
+    "@type": "Offer",
+    "price": "2250000",
+    "priceCurrency": "IDR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://sikunir.com/paket-3-hari-2-malam-purwokerto.html"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Sikunir.com",
+    "url": "https://sikunir.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62-812-1530-7700",
+      "contactType": "customer service"
+    }
+  }
+}
+</script>
+</head>
+<body>
+  <header class="pro-header">
+    <div class="branding">
+      <div class="logo">Sikunir<span>.com</span></div>
+      <div class="sub">Paket Wisata Dieng</div>
+    </div>
+    <div class="cta">
+      <a href="https://wa.me/6281215307700" target="_blank" rel="nofollow"" target="_blank" rel="nofollow" class="btn-cta">💬 Booking</a>
+    </div>
+  </header>
+  <div class="container">
+<div class="filter-section">
+  <label for="filter-kota">📍 Pilih Kota Keberangkatan:</label>
+  <select id="filter-kota" onchange="window.location.href=this.value;">
+    <option value="#">-- Pilih Kota --</option>
+    <option value="paket-1-hari-wonosobo.html">1 Hari dari Wonosobo</option>
+    <option value="paket-1-hari-jogja.html">1 Hari dari Jogja</option>
+    <option value="paket-1-hari-purwokerto.html">1 Hari dari Purwokerto</option>
+    <option value="paket-1-hari-semarang.html">1 Hari dari Semarang</option>
+    <option value="paket-1-hari-solo.html">1 Hari dari Solo</option>
+    <option value="paket-2-hari-1-malam-wonosobo.html">2H1M dari Wonosobo</option>
+    <option value="paket-2-hari-1-malam-jogja.html">2H1M dari Jogja</option>
+    <option value="paket-2-hari-1-malam-purwokerto.html">2H1M dari Purwokerto</option>
+    <option value="paket-2-hari-1-malam-semarang.html">2H1M dari Semarang</option>
+    <option value="paket-2-hari-1-malam-solo.html">2H1M dari Solo</option>
+    <option value="paket-3-hari-2-malam-wonosobo.html">3H2M dari Wonosobo</option>
+    <option value="paket-3-hari-2-malam-jogja.html">3H2M dari Jogja</option>
+    <option value="paket-3-hari-2-malam-purwokerto.html">3H2M dari Purwokerto</option>
+    <option value="paket-3-hari-2-malam-semarang.html">3H2M dari Semarang</option>
+    <option value="paket-3-hari-2-malam-solo.html">3H2M dari Solo</option>
+  </select>
+</div>
+
+    <h1 style="font-size: 18px; margin-bottom: 10px;">Paket Wisata Dieng 3 Hari 2 Malam dari Purwokerto</h1>
+    <div style="color: #777; font-size: 14px; margin-bottom: 18px;">Harga mulai dari Rp2.250.000/pax</div>
+
+    <div class="section-title">✅ Fasilitas</div>
+    <div class="badge-wrap"><span class='badge'>🚐 Transportasi</span><span class='badge'>🏠 Homestay 2 Malam</span><span class='badge'>🍽️ 7x Makan</span><span class='badge'>🎟️ Tiket Wisata</span><span class='badge'>🧭 Guide</span><span class='badge'>📸 Dokumentasi (Opsional)</span></div>
+
+    <div class="section-title">📍 Destinasi Wisata</div>
+    <div class="badge-wrap"><span class='badge'>🌅 Sikunir</span><span class='badge'>🌋 Kawah Sikidang</span><span class='badge'>🏛️ Candi Arjuna</span><span class='badge'>🪨 Batu Ratapan Angin</span><span class='badge'>🎬 Dieng Theater</span><span class='badge'>🌿 Perkebunan Teh</span><span class='badge'>🌊 Telaga Menjer</span><span class='badge'>🏛️ Museum Kailasa</span><span class='badge'>🕳️ Sumur Jalatunda</span><span class='badge'>🌄 Telaga Merdada</span><span class='badge'>🔥 Kawah Candradimuka</span><span class='badge'>📍 Bisa Request</span></div>
+
+    <a class="btn-cta" style="display:inline-block; margin-top:24px;" href="https://wa.me/6281215307700?text=Halo, saya tertarik dengan Paket Wisata Dieng 3 Hari 2 Malam dari Purwokerto" target="_blank" rel="nofollow"">💬 Booking via WhatsApp</a>
+  </div>
+
+<a href="/index.html" class="btn home-btn">← Kembali ke Beranda</a>
+<footer class="footer">
+  <div class="footer-content">
+    <span>🌐 Sikunir.com – Paket Wisata Dieng</span><br/>
+    <a href="https://wa.me/6281215307700" target="_blank" rel="nofollow"" target="_blank" rel="nofollow" class="footer-link">💬 Hubungi Kami via WhatsApp</a>
+  </div>
+</footer>
+
+</body>
+</html>
