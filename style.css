@@ -242,3 +242,68 @@ a {
 .suggestions a:hover {
   color: #0b4db7;
 }
+
+
+
+/* TOC card */
+.toc {
+  background: #ffffff;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toc:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* TOC heading */
+.toc h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+  color: #111827;
+}
+
+/* TOC list */
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* TOC item */
+.toc li {
+  margin: 0.5em 0;
+  font-size: 1em;
+  border-bottom: 1px solid #e5e7eb; /* garis tipis bawah */
+  padding-bottom: 0.4em;
+}
+
+.toc li:last-child {
+  border-bottom: none;
+}
+
+/* TOC link */
+.toc a {
+  text-decoration: none;
+  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: #1e40af;
+}
+
+/* Bullet icon */
+.toc-bullet {
+  color: #2563eb;
+  font-weight: bold;
+  transform: scale(1.2);
+}
